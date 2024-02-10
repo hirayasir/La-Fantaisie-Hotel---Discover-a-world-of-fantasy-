@@ -1,0 +1,230 @@
+  /* This is the style sheet for the La Fantaisie Hotel landing page */
+
+  body {
+    background-color: #ffffff; 
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+  }
+
+
+  header {
+    background-color: #a59387; /* Set the header background color to a light brown */
+    height: 100px; /* Set the header height to 100 pixels */
+    color: white; /* Set the header text color to white */
+    display: flex; /* Use flexbox to align the header elements */
+    align-items: center; /* Vertically center the header elements */
+    justify-content: space-between; /* Horizontally space out the header elements */
+  }
+
+  .nav ul {
+    background-color: #bisque; /* Set the navigation list background color to a light yellow */
+    list-style: none; /* Remove the default list style */
+    margin: 0; /* Remove the default margin */
+    padding: 20px 0 0 0; /* Add some padding to the top of the list */
+    text-align: center; /* Center the list items */
+    
+  }
+
+  .nav li {
+    display: inline-block; /* Display the list items as inline blocks */
+    padding: 20px; /* Add some padding around the list items */
+    margin: 0 10px; /* Add some margin between the list items */
+  }
+
+  .nav li a {
+    color: white; /* Set the link color to white */
+    transition: color 0.3s ease-in-out; /* Add a transition for the link color */
+  }
+
+  .nav li a:hover {
+    color: #fb6f92; /* Change the link color to pink on hover */
+  }
+
+  /*Hero section*/
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(assets/hotel.jpg); /* Set the hero section background to a gradient overlay and an image */
+    background-size: cover; /* Cover the entire section with the background */
+    background-position: center; /* Center the background image */
+    display: flex; /* Use flexbox to align the hero section elements */
+    justify-content: center; /* Horizontally center the hero section elements */
+    align-items: center; /* Vertically center the hero section elements */
+    min-height: 100vh; /* Set the minimum height of the hero section to 100% of the viewport height */
+    flex-direction: column; /* Arrange the hero section elements in a column */
+  }
+
+  .hero__title,
+  .hero__blurb {
+    color: white; /* Set the hero section text color to white */
+    text-align: center; /* Center the hero section text */
+  }
+
+  .hero__title {
+    font-family: 'Roboto', sans-serif; /* Set the hero section title font family to Roboto */
+    font-size: clamp(2rem, 5vw, 4rem); /* Set the hero section title font size to be responsive using the clamp() function */
+  }
+
+  .hero__subtitle {
+    font-weight: 600; 
+    /*font-size: 25px;*/
+    color: #fb6f92;
+    text-align: center; 
+    /*responsive units and the CSS clamp() function to size the text and images responsively*/
+    /* The font-size will be between 1.5rem and 3rem*/
+    font-size: clamp(1.5rem, 5vw, 3rem); /
+    
+    
+  }
+/*hover transition*/
+.design{
+  font-size: 60px;
+  width: 20%;
+  transition-duration: 1s;
+}
+
+.design:hover{
+
+transform: rotate(360deg);
+}
+ /*outline remove*/
+    .nav li a {
+      text-decoration: none; /* Remove the default text decoration for the navigation links */
+    }
+
+
+
+/*Google Fonts*/
+
+/* Add @font-face rule to generated web fonts .woff/.woff2 */
+    @font-face {
+        font-family: 'zilla_slab_highlightbold';
+        src: url('font/zillaslabhighlight-bold-webfont.woff2') format('woff2'),
+             url('font/zillaslabhighlight-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+.hero  {
+  /*font-family: "Brush Script";*/;
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+}
+
+.hero__title {
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+ .about__title {
+  font-size: 3.5em; /*  */
+  font-family: 'zilla_slab_highlightbold';
+  letter-spacing: 1px;
+}
+  /*About Us*/
+  .about__title {
+    font-size: 50px; /* Set the about section title font size to 50 pixels */
+    text-align: left; /* Align the about section title to the left */
+    margin: 90px; /* Add some margin around the about section title */
+  }
+  .about__row {
+    display: flex; /* Use flexbox to align the about section elements */
+    overflow: auto; /* Prevent the image from overflowing the container */
+  }
+
+  .about__image {
+    width: 50%; /* Set the image width to 50% of the container */
+    margin: 10px 50px 30px 30px; /* Add some margin around the image */
+    float: left; /* Float the image to the left of the text */
+  }
+
+h3 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 30px; 
+  margin: 20px; 
+  
+}
+  .active a {
+    pointer-events: none; /* Disable the pointer events for the active link */
+    cursor: default; /* Set the cursor to the default for the active link */
+   
+  }
+
+/*hr*/   
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "🍂";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/*footer*/
+  .footer{
+    background:#000; /* Set the footer background color to black */
+    padding:30px 0px; /* Add some padding to the top and bottom of the footer */
+    font-family: 'Play', sans-serif; /* Set the footer font family to Play */
+    text-align:center; /* Center the footer elements */
+  }
+
+  .footer .row{
+    width:100%; /* Set the footer row width to 100% of the container */
+    margin:1% 0%; /* Add some margin to the top and bottom of the footer row */
+    padding:0.6% 0%; /* Add some padding to the top and bottom of the footer row */
+    color:gray; /* Set the footer row color to gray */
+    font-size:0.8em; /* Set the footer row font size to 0.8em */
+  }
+
+  .footer .row a{
+    text-decoration:none; /* Remove the default text decoration for the footer links */
+    color:gray; /* Set the footer link color to gray */
+    transition:0.5s; /* Add a transition for the footer link color */
+  }
+
+  .footer .row a:hover{
+    color:#fff; /* Change the footer link color to white on hover */
+  }
+
+  .footer .row ul{
+    width:100%; /* Set the footer list width to 100% of the container */
+  }
+
+  .footer .row ul li{
+    display:inline-block; /* Display the footer list items as inline blocks */
+    margin:0px 30px; /* Add some margin between the footer list items */
+  }
+
+  .footer .row a i{
+    font-size:2em; /* Set the footer icon font size to 2em */
+    margin:0% 1%; /* Add some margin around the footer icons */
+  }
+
+  @media (max-width:720px){
+    .footer{
+      text-align:left; /* Align the footer elements to the left on small screens */
+      padding:5%; /* Add some padding to the footer on small screens */
+    }
+
+    .footer .row ul li{
+      display:block; /* Display the footer list items as blocks on small screens */
+      margin:10px 0px; /* Add some margin to the top and bottom of the footer list items on small screens */
+      text-align:left; /* Align the footer list items to the left on small screens */
+    }
+
+    .footer .row a i{
+      margin:0% 3%; /* Add some margin to the left and right of the footer icons on small screens */
+    }
+  }
+
+   
